@@ -13,11 +13,6 @@ class LessonsRelationManager extends RelationManager
 
     protected static ?string $relatedResource = LessonResource::class;
 
-    public function isReadOnly(): bool
-    {
-        return false;
-    }
-
     public function table(Table $table): Table
     {
         return $table
