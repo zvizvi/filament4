@@ -57,8 +57,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ])
-            ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
-            ->spa();
+            ]);
     }
 }
