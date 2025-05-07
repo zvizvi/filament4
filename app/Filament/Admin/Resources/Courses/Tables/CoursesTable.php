@@ -2,12 +2,14 @@
 
 namespace App\Filament\Admin\Resources\Courses\Tables;
 
+use App\Enums\CourseLevel;
+use App\Models\Course;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class CoursesTable
@@ -22,6 +24,11 @@ class CoursesTable
                 TextColumn::make('description')
                     ->html(),
                 TextColumn::make('price'),
+                TextColumn::make('level')
+                    ->badge()
+                    ->color(fn(Course $record): string => $record->level?->getColor() ?? 'gray')
+                    ->icon(fn(Course $record): string => $record->level?->getIcon() ?? 'heroicon-o-question-mark-circle')
+                    ->sortable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -32,7 +39,9 @@ class CoursesTable
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                SelectFilter::make('level')
+                    ->label('Level')
+                    ->options(CourseLevel::class),
             ])
             ->actions([
                 ViewAction::make(),

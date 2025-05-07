@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\CourseLevel;
 use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
@@ -12,6 +13,11 @@ class Course extends Model
         'name',
         'description',
         'price',
+        'level',
+    ];
+
+    protected $casts = [
+        'level' => CourseLevel::class,
     ];
 
     public function lessons()
