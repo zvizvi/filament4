@@ -13,7 +13,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
-        "filament/filament": "v4.0.0-alpha7",
+        "filament/filament": "v4.0.0-alpha8",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
