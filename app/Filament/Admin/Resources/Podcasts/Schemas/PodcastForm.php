@@ -17,24 +17,16 @@ class PodcastForm
                 TextInput::make('title')
                     ->required(),
                 Textarea::make('description')
-                    ->required()
                     ->columnSpanFull(),
                 FileUpload::make('image')
-                    ->image()
-                    ->required(),
-                TextInput::make('url')
-                    ->required(),
-                TextInput::make('author')
-                    ->required(),
-                TextInput::make('category')
-                    ->required(),
-                TextInput::make('language')
-                    ->required(),
+                    ->image(),
+                TextInput::make('url'),
+                TextInput::make('author'),
+                TextInput::make('category'),
+                TextInput::make('language'),
                 RichEditor::make('content')
-                    ->required()
                     ->columnSpanFull(),
-                TextInput::make('feed_url')
-                    ->required(),
+                TextInput::make('feed_url'),
             ]);
     }
 }
