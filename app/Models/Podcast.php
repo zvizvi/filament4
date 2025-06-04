@@ -27,4 +27,12 @@ class Podcast extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
+
+    /**
+     * Get the episodes for the podcast.
+     */
+    public function episodes()
+    {
+        return $this->hasMany(Episode::class);
+    }
 }
