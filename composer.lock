@@ -864,12 +864,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zvizvi/filament-tweaks.git",
-                "reference": "7da5a6fca6c53890600796899c048cf13df5db71"
+                "reference": "44fc403c0ae5d37fa9af96fb031e831c6af3964b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zvizvi/filament-tweaks/zipball/7da5a6fca6c53890600796899c048cf13df5db71",
-                "reference": "7da5a6fca6c53890600796899c048cf13df5db71",
+                "url": "https://api.github.com/repos/zvizvi/filament-tweaks/zipball/44fc403c0ae5d37fa9af96fb031e831c6af3964b",
+                "reference": "44fc403c0ae5d37fa9af96fb031e831c6af3964b",
                 "shasum": ""
             },
             "require": {
@@ -929,7 +929,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-28T01:32:09+00:00"
+            "time": "2025-06-04T00:21:06+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
