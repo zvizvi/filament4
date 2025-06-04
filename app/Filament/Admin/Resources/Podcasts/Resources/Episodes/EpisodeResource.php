@@ -20,8 +20,17 @@ class EpisodeResource extends Resource
 {
     protected static ?string $model = Episode::class;
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Microphone;
-
     protected static ?string $parentResource = PodcastResource::class;
+
+    public static function getLabel(): string
+    {
+        return __('Episode');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('Episodes');
+    }
 
     public static function form(Schema $schema): Schema
     {

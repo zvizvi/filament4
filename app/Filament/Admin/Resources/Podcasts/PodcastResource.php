@@ -21,6 +21,16 @@ class PodcastResource extends Resource
     protected static ?string $model = Podcast::class;
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Signal;
 
+    public static function getLabel(): string
+    {
+        return __('Podcast');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('Podcasts');
+    }
+
     public static function form(Schema $schema): Schema
     {
         return PodcastForm::configure($schema);
