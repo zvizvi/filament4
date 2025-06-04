@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.2",
         "dowhile/filament-tweaks": "4.x-dev",
+        "laravel-lang/lang": "^15.21",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1"
     },
