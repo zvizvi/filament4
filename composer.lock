@@ -998,12 +998,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zvizvi/filament-tweaks.git",
-                "reference": "44fc403c0ae5d37fa9af96fb031e831c6af3964b"
+                "reference": "18594b87b55c432cb4eb3307882dcbc76c3f13a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zvizvi/filament-tweaks/zipball/44fc403c0ae5d37fa9af96fb031e831c6af3964b",
-                "reference": "44fc403c0ae5d37fa9af96fb031e831c6af3964b",
+                "url": "https://api.github.com/repos/zvizvi/filament-tweaks/zipball/18594b87b55c432cb4eb3307882dcbc76c3f13a9",
+                "reference": "18594b87b55c432cb4eb3307882dcbc76c3f13a9",
                 "shasum": ""
             },
             "require": {
@@ -1063,7 +1063,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-04T00:21:06+00:00"
+            "time": "2025-06-15T23:57:25+00:00"
         },
         {
             "name": "dragon-code/contracts",
