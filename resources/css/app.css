@@ -5,6 +5,7 @@
 @source '../../resources/views/filament/admin/**/*';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../vendor/awcodes/overlook/resources/**/*.blade.php';
+@source '../../vendor/bezhansalleh/filament-language-switch/resources/views/**/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';

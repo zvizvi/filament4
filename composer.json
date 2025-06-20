@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.2",
         "awcodes/overlook": "^3.0@beta",
+        "bezhansalleh/filament-language-switch": "^4.0@beta",
         "dowhile/filament-tweaks": "4.x-dev",
         "laravel-lang/lang": "^15.21",
         "laravel/framework": "^12.0",
