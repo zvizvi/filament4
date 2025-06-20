@@ -41,7 +41,7 @@ class PodcastsTable
             ->filters([
                 //
             ])
-            ->actions([
+            ->recordActions([
                 EditAction::make(),
             ]);
     }

@@ -43,11 +43,11 @@ class CoursesTable
                     ->label('Level')
                     ->options(CourseLevel::class),
             ])
-            ->actions([
+            ->recordActions([
                 ViewAction::make(),
                 EditAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),

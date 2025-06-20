@@ -2,6 +2,8 @@
 
 namespace App\Providers\Filament;
 
+use Awcodes\Overlook\OverlookPlugin;
+use Awcodes\Overlook\Widgets\OverlookWidget;
 use Dowhile\FilamentTweaks\FilamentTweaksPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -44,6 +46,7 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,
+                OverlookWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -61,6 +64,21 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugins([
                 FilamentTweaksPlugin::make(),
-            ]);
+                OverlookPlugin::make()
+                    ->includes([
+                        \App\Filament\Admin\Resources\Courses\CourseResource::class,
+                        \App\Filament\Admin\Resources\Podcasts\PodcastResource::class,
+                    ])
+                    ->sort(2)
+                    ->columns([
+                        'default' => 4,
+                        'sm' => 2,
+                        'md' => 3,
+                        'lg' => 4,
+                        'xl' => 5,
+                        '2xl' => null,
+                    ]),
+            ])
+            ->viteTheme('resources/css/app.css');
     }
 }
