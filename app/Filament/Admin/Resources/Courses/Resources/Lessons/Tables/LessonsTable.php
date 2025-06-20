@@ -19,9 +19,6 @@ class LessonsTable
                     ->searchable(),
                 TextColumn::make('description')
                     ->html(),
-                TextColumn::make('course_id')
-                    ->numeric()
-                    ->sortable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

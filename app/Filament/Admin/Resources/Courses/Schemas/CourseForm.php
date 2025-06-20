@@ -20,7 +20,7 @@ class CourseForm
             ->components([
                 Tabs::make()
                     ->schema([
-                        Tabs\Tab::make('info')
+                        Tabs\Tab::make('Info')
                             ->schema([
                                 TextInput::make('name')
                                     ->required(),
@@ -34,13 +34,14 @@ class CourseForm
                                     ->selectablePlaceholder(false)
                                     ->native(false),
                             ]),
-                        Tabs\Tab::make('lessons')
+                        Tabs\Tab::make('Lessons')
                             ->schema([
                                 Repeater::make('lessons')
                                     ->relationship('lessons')
                                     ->table([
-                                        TableColumn::make('name'),
-                                        TableColumn::make('description'),
+                                        TableColumn::make(__('Name'))
+                                            ->width('30%'),
+                                        TableColumn::make(__('Description')),
                                     ])
                                     ->schema(LessonForm::configure($schema)->getComponents())
                                     ->columnSpanFull(),

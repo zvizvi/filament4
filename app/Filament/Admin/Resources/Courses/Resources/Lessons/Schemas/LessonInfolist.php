@@ -18,8 +18,6 @@ class LessonInfolist
                 TextEntry::make('name'),
                 TextEntry::make('description')
                     ->html(),
-                TextEntry::make('course_id')
-                    ->numeric(),
             ]);
     }
 }

@@ -23,7 +23,21 @@ class CourseResource extends Resource
 {
     protected static ?string $model = Course::class;
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-    protected static string|UnitEnum|null $navigationGroup = 'Courses';
+
+    public static function getLabel(): string
+    {
+        return __('Course');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('Courses');
+    }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return __('Courses');
+    }
 
     public static function form(Schema $schema): Schema
     {

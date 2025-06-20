@@ -24,6 +24,16 @@ class LessonResource extends Resource
 
     protected static ?string $parentResource = CourseResource::class;
 
+    public static function getLabel(): string
+    {
+        return __('Lesson');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('Lessons');
+    }
+
     public static function form(Schema $schema): Schema
     {
         return LessonForm::configure($schema);
