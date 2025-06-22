@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "635cb72a937ed343b9495882261dc9e8",
+    "content-hash": "d56a69ed0f379a4d82871aa2ad73d964",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1143,12 +1143,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zvizvi/filament-tweaks.git",
-                "reference": "5c3a7596d27babb7619576b52eb8d0bd1e12338c"
+                "reference": "6dedfdda36233fd99e43800c2c016c3aca651f8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zvizvi/filament-tweaks/zipball/5c3a7596d27babb7619576b52eb8d0bd1e12338c",
-                "reference": "5c3a7596d27babb7619576b52eb8d0bd1e12338c",
+                "url": "https://api.github.com/repos/zvizvi/filament-tweaks/zipball/6dedfdda36233fd99e43800c2c016c3aca651f8e",
+                "reference": "6dedfdda36233fd99e43800c2c016c3aca651f8e",
                 "shasum": ""
             },
             "require": {
@@ -1208,7 +1208,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-20T00:49:05+00:00"
+            "time": "2025-06-22T20:14:06+00:00"
         },
         {
             "name": "dragon-code/contracts",

@@ -12,6 +12,9 @@ return [
 
     'filters' => [
         'actions' => [
+            'apply' => [
+                'label' => 'החל מסננים',
+            ],
             'remove' => [
                 'label' => 'הסר מסנן',
             ],
