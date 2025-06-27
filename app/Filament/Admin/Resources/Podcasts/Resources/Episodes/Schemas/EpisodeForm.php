@@ -25,6 +25,7 @@ class EpisodeForm
                 DateTimePicker::make('published_at')
                     ->required()
                     ->default(now()),
-            ]);
+            ])
+            ->columns(2);
     }
 }

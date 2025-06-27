@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42b34b76564e1d3573663a0e05b6f375",
+    "content-hash": "f0e8566b6d963c1f74f1420b2b814fed",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -9185,6 +9185,76 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "zvizvi/relation-manager-repeater",
+            "version": "v4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zvizvi/filament-relation-manager-repeater.git",
+                "reference": "fb6649485e8ebcd089c992393fca77d2b080c883"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zvizvi/filament-relation-manager-repeater/zipball/fb6649485e8ebcd089c992393fca77d2b080c883",
+                "reference": "fb6649485e8ebcd089c992393fca77d2b080c883",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^7.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "RelationManagerRepeater": "Zvizvi\\RelationManagerRepeater\\Facades\\RelationManagerRepeater"
+                    },
+                    "providers": [
+                        "Zvizvi\\RelationManagerRepeater\\RelationManagerRepeaterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zvizvi\\RelationManagerRepeater\\": "src/",
+                    "Zvizvi\\RelationManagerRepeater\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zvizvi",
+                    "email": "zvizvi5@outlook.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filament plugin that adds a Repeater form interface for editing relationship records in Filament's relation managers",
+            "homepage": "https://github.com/zvizvi/filament-relation-manager-repeater",
+            "keywords": [
+                "filament",
+                "laravel",
+                "relation-manager-repeater",
+                "zvizvi"
+            ],
+            "support": {
+                "issues": "https://github.com/zvizvi/filament-relation-manager-repeater/issues",
+                "source": "https://github.com/zvizvi/filament-relation-manager-repeater"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/zvizvi",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-06-27T01:08:44+00:00"
         }
     ],
     "packages-dev": [
@@ -12436,7 +12506,8 @@
     "stability-flags": {
         "awcodes/overlook": 10,
         "bezhansalleh/filament-language-switch": 10,
-        "dowhile/filament-tweaks": 20
+        "dowhile/filament-tweaks": 20,
+        "zvizvi/relation-manager-repeater": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -12,11 +12,12 @@
         "dowhile/filament-tweaks": "4.x-dev",
         "laravel-lang/lang": "^15.22",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "zvizvi/relation-manager-repeater": "v4.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24",
-        "filament/filament": "^v4.0.0-beta9",
+        "filament/filament": "^v4.0.0-beta10",
         "laravel/pail": "^1.2.3",
         "laravel/pint": "^1.22",
         "laravel/sail": "^1.43",

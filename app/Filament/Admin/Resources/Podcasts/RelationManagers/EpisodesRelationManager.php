@@ -7,6 +7,7 @@ use Filament\Actions\CreateAction;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
+use Zvizvi\RelationManagerRepeater\Tables\RelationManagerRepeaterAction;
 
 class EpisodesRelationManager extends RelationManager
 {
@@ -23,6 +24,7 @@ class EpisodesRelationManager extends RelationManager
         return $table
             ->headerActions([
                 CreateAction::make(),
+                RelationManagerRepeaterAction::make(),
             ]);
     }
 }
