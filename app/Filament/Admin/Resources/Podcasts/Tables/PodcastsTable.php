@@ -43,6 +43,7 @@ class PodcastsTable
             ])
             ->recordActions([
                 EditAction::make(),
-            ]);
+            ])
+            ->allColumnsToggleable();
     }
 }
